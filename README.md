@@ -1,3 +1,11 @@
+<div align='center'>
+    <img src='./Assets/Glass-Animated.svg' alt='Glass logo animation' width='50%' />
+    <br/>
+    <a href='https://www.powershellgallery.com/packages/Glass/' >
+    <img src='https://img.shields.io/powershellgallery/dt/Glass' />
+    </a>
+</div>
+
 # Glass
 
 ## A Module for Finding, Reading, and Writing Secret Messages
@@ -29,7 +37,7 @@ There are a few different variations throughout the standard, but there's one bl
 Why?
 
 1. They're all invisible characters.
-2. There are 16 of them (or, one byte)
+2. There are 16 of them (or, half a byte)
 
 This means that it's easy to smuggle in bytes of invisible information.  
 
@@ -49,7 +57,29 @@ In my opinion, the ethical thing to do is to these invisible characters easier t
 
 This module is meant for educational purposes and to assist responsible professionals in the discovery of glassware.
 
+### Installing and Importing
+
+Glass is available on the PowerShell Gallery.  You can install it with `Install-Module`:
+
+~~~PowerShell
+Install-Module Glass -Scope CurrentUser -Force
+~~~
+
+Once installed, you can import the module with `Import-Module`:
+
+~~~PowerShell
+Import-Module Glass -PassThru
+~~~
+
+You can also clone this repository and import locally:
+
+~~~PowerShell
+git clone https://github.com/StartAutomating/Glass.git
+Import-Module ./Glass -PassThru
+~~~
+
 ### Get-Glass
+
 The primary use case of this module is to detect glass within files and archives.
 
 For example, to import glass and scan it for glass:
@@ -82,7 +112,7 @@ ConvertTo-Glass "Now You See Me"
 Convert a message from glass
 
 ~~~PowerShell
-ConvertTo-Glass "Now You See Me"  |
+ConvertTo-Glass "Now You See Me" |
     ConvertFrom-Glass
 ~~~
 
