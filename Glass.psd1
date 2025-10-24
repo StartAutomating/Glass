@@ -12,7 +12,7 @@
 RootModule = 'Glass.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1'
+ModuleVersion = '0.1.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -108,6 +108,13 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
+## Glass 0.1.1:
+
+* Added Logo (#13)
+* Updated README (#14)
+
+---
+
 ## Glass 0.1:
 
 Initial Build of Glass Module (#1)

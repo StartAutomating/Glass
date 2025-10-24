@@ -1,3 +1,10 @@
+## Glass 0.1.1:
+
+* Added Logo (#13)
+* Updated README (#14)
+
+---
+
 ## Glass 0.1:
 
 Initial Build of Glass Module (#1)
