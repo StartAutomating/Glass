@@ -47,5 +47,52 @@ In my opinion, the ethical thing to do is to these invisible characters easier t
 
 ## Using this Module 
 
+This module is meant for educational purposes and to assist responsible professionals in the discovery of glassware.
+
+### Get-Glass
 The primary use case of this module is to detect glass within files and archives.
 
+For example, to import glass and scan it for glass:
+
+~~~PowerShell
+Import-Module Glass -Force -PassThru |
+    Get-Glass
+~~~
+
+To scan for all glass in a directory:
+
+~~~PowerShell
+Get-Item $pwd | Glass
+~~~
+
+The secondary purpose is to help people understand glass encoding.
+
+To that end, this module includes two additional commands:
+
+### ConvertTo-Glass
+
+Convert a message to glass
+
+~~~PowerShell
+ConvertTo-Glass "Now You See Me"
+~~~
+
+### ConvertFrom-Glass
+
+Convert a message from glass
+
+~~~PowerShell
+ConvertTo-Glass "Now You See Me"  |
+    ConvertFrom-Glass
+~~~
+
+It should be noted that not all glass messages will be encoded in plaintext.
+
+### Responsible Use
+
+This module should be used to detect dangerous shards of glass in an organization.  
+
+Any other use is prohibited by the code of conduct, 
+and should be reported to this repository so that security researchers can understand new glassware attack vectors as they arise.
+
+If you see this module in your organization, and you are not actively using it for security research, please report this to your network administrator and information security teams immediately.
