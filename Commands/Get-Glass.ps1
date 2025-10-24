@@ -103,7 +103,7 @@ function Get-Glass {
                         Get-Glass
                 } else {
                     # otherwise, look for glass in the text blob
-                    $toScan += $file
+                    $toScan += [PSCustomObject]@{Text=$file}
                 }
             }
 
