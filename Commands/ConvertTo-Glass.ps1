@@ -12,6 +12,7 @@ function ConvertTo-Glass
     .EXAMPLE
         ConvertTo-Glass "This is a glass messsage"
     #>
+    [Alias('ToGlass')]
     param()
 
     $allArgsAndInput = @($input) + $args

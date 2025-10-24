@@ -27,6 +27,7 @@ function Get-Glass {
     .LINK
         ConvertTo-Glass
     #>
+    [Alias('Glass')]
     param(
     # Looks for glass in a variety of different inputs
     [Parameter(ValueFromPipeline,ValueFromPipelineByPropertyName)]
