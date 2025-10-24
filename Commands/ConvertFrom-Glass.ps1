@@ -19,6 +19,7 @@ function ConvertFrom-Glass {
     .LINK
         ConvertTo-Glass
     #>
+    [Alias('FromGlass')]
     param()
     $allArgsAndInput = @($input) + $args
 

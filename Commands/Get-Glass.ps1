@@ -45,7 +45,6 @@ function Get-Glass {
 
         # Make our pattern into a real regex, for a bit of performance boost.
         $glassDetector = [Regex]::new($glassPattern) 
-
         
         $glassFound = @()
         $ToScan = @()
@@ -176,10 +175,8 @@ function Get-Glass {
             [PSCustomObject]@{
                 FilesScanned = $totalFilesScanned
                 PartsScanned = $totalArchivePartsScanned 
-                GlassFound = $glassFound                
+                Glass = $glassFound
             }
-        }
-
-        
+        }        
     }
 }
